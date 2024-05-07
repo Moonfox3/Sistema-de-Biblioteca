@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='biblioteca.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Biblioteca</h1>
+        <ul>
+            <li><a href="{{ url_for('cadastrar_livro') }}">Cadastrar Livro</a></li>
+            <li><a href="{{ url_for('listar_livros') }}">Listar Livros</a></li>
+            <li><a href="{{ url_for('emprestar_livro') }}">Emprestar Livro</a></li>
+            <li><a href="{{ url_for('devolver_livro') }}">Devolver Livro</a></li>
+        </ul>
+    </div>
+</body>
+</html>
